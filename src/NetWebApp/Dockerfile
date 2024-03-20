@@ -7,10 +7,13 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["NetWebApp.csproj", "."]
-RUN dotnet restore "./NetWebApp.csproj"
+COPY ["src/NetWebApp/NetWebApp.csproj", "src/NetWebApp/"]
+COPY ["src/Infrastructure/Infrastructure.csproj", "src/Infrastructure/"]
+COPY ["src/Application/Application.csproj", "src/Application/"]
+COPY ["src/Domain/Domain.csproj", "src/Domain/"]
+RUN dotnet restore "src/NetWebApp/NetWebApp.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/src/NetWebApp"
 RUN dotnet build "NetWebApp.csproj" -c Release -o /app/build
 
 FROM build AS publish
