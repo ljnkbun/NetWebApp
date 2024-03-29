@@ -1,4 +1,6 @@
-﻿namespace NetWebApp.Extensions
+﻿using EventBus.Extensions;
+
+namespace NetWebApp.Extensions
 {
     public static class ServiceExtensions
     {
@@ -64,7 +66,7 @@
             //    });
             //    #endregion
             //});
-            //services.AddEventBusService();
+            services.AddEventBusService();
         }
     }
 }

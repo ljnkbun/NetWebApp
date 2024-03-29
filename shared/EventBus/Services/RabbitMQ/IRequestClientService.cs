@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 
-namespace EventBus.Services
+namespace EventBus.Services.RabbitMQ
 {
     public interface IRequestClientService
     {

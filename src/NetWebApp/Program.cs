@@ -42,6 +42,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddEventBus(configuration);
 builder.Services.AddJob();
+builder.Services.AddEventBus(configuration);
 
 var app = builder.Build();
 

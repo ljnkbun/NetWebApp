@@ -7,13 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Definations\" />
-    <Folder Include="Models\Messages\" />
-    <Folder Include="Models\Responses\" />
-    <Folder Include="Models\Requests\" />
+    <Folder Include="Definations\RabbitMQ\" />
+    <Folder Include="Models\Kafka\Topics\" />
+    <Folder Include="Models\RabbitMQ\Messages\" />
+    <Folder Include="Models\RabbitMQ\Requests\" />
+    <Folder Include="Models\RabbitMQ\Responses\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.3.0" />
     <PackageReference Include="MassTransit" Version="8.1.3" />
   </ItemGroup>
 
