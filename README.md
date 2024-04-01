@@ -7,8 +7,8 @@ Based on
 - [Microsoft/dotnet docker image](https://hub.docker.com/r/microsoft/dotnet/)
 
 ### Run on Visual Studio
-1. Install [Visual Studio 2017 for your platform](https://www.visualstudio.com/vs/) if didn't install yet.
-2. Install [Visual Studio 2017 Tools (Preview 2)](https://www.microsoft.com/net/download/core) if didn't install yet.
+1. Install [Visual Studio 2022 for your platform](https://www.visualstudio.com/vs/) if didn't install yet.
+2. Install [Visual Studio 2022 Tools (Preview 2)](https://www.microsoft.com/net/download/core) if didn't install yet.
 3. [Visual Studio tools include .NET Core 7.0. You need to also install .NET Core 7.0 SDK to add support the .NET Core 7.0](https://www.microsoft.com/net/download/core#/current/sdk) if didn't install yet.
 4. Open project
 5. Create dbsettings.json - see more below
